@@ -9,6 +9,8 @@ import About from './components/about/About';
 import Gallery from './components/gallery/Gallery';
 import { FetchData } from './hooks/FetchData';
 import { createContext } from 'react';
+import GalleryImgDetails from './components/galleryImgDetails/GalleryImgDetails';
+import NoResult from './components/noResult/NoResult';
 export const ContextGallery = createContext()
 function App() {
   const [gallery, setGallery] = FetchData()
@@ -25,6 +27,8 @@ function App() {
           <Route path='/place' element={<Places />}></Route>
           <Route path='/about' element={<About />}></Route>
           <Route path='/gallery' element={<Gallery />}></Route>
+          <Route path='/gallery/:id' element={<GalleryImgDetails/>}></Route>
+          <Route path='*' element={<NoResult/>}></Route>
         </Routes>
         <Footer />
       </ContextGallery.Provider>
