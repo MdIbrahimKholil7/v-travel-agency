@@ -6,3 +6,13 @@
 html{
   font-size: 62.5%;
 }
+@media screen and (max-width:875px){
+  html{
+    font-size: 54%;
+  }
+}
+@media screen and (max-width:640px){
+  html{
+    font-size: 45%;
+  }
+}

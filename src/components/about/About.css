@@ -1,0 +1,12 @@
+.learn-btn{
+    border: .1rem solid orange;
+    bottom: 2rem;
+    display: block;
+}
+.learn-btn:hover{
+    background: #fff;
+    border: .1rem solid orange;
+    border-radius: .8rem;
+    transition: .3s ease-in;
+    color: #000;
+}

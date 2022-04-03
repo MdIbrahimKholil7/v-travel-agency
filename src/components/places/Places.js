@@ -53,7 +53,7 @@ const Places = () => {
                 </div >
             </Swiper>
 
-            <div className="w-full mt-20">
+            <div className="w-full mt-20 mb-20">
                 <h1 className="text-4xl font-bold">Asia's Most Popular Places For Your Tour</h1>
 
                 <div className="w-[100%] mx-auto h-[60vh] mt-10">
@@ -82,7 +82,7 @@ const Places = () => {
                     >
                         {
                             asianImage.map(image => <SwiperSlide><div>
-                                                 <img className='h-[30rem] object-cover' src={image.img} alt="" />                                   <h1 className="mt-8 text-4xl mb-[7rem]">{image.details}</h1>    
+                                                 <img className='h-[30rem] w-full object-cover' src={image.img} alt="" />                                   <h1 className="mt-8 text-4xl mb-[7rem]">{image.details}</h1>    
                                 </div></SwiperSlide>)
                        }
                     </Swiper>
